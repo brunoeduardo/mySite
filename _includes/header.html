@@ -1,0 +1,26 @@
+<header class="main-header">
+
+    <a class="beduardo-logo" href="{{ site.baseurl }}/">Logo</a>
+
+    <span class="main-menu">Menu</span>
+
+    <nav class="main-nav">
+      <div class="trigger" style="display:none">
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+    
+    <div class="main-socialMedia">
+      <ul>
+        <li class="icon-linkedin">LinkedIn</li>
+        <li class="icon-github">GitHub</li>
+        <li class="icon-twitter">Twitter</li>
+      </ul>
+    </div>
+  </div>
+
+</header>

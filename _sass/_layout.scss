@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.main-header {
+    background: #fff;
+    border-bottom: 2px solid $brand-color;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    top: 0;
+    width: 100%
+
+}
+
+.beduardo-logo{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 70px;
+
+}
+
+.main-menu {
+    float: left;
+    width: 25%;
+}
+
+.main-socialMedia {
+
+    @extend %clearfix
+}
+
+.main-socialMedia ul {
+    list-style: none;
+}
+
+.main-socialMedia li {
+    float:left;
+    display: inline-box;
+
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+   .main-footer {
+        background-color: $grey-color;
+        font-size: 0.7rem;
+        padding: 2px 0;
+        text-align: center;
+        width: 100%;
+   }

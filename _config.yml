@@ -1,0 +1,11 @@
+# Site settings
+title: beduardo | web & designer
+email: bruno@beduardo.com
+description: > # Sei la blog
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://beduardo.com" # the base hostname & protocol for your site
+twitter_username: bbrunoedu
+github_username:  brunoeduardo
+
+# Build settings
+markdown: kramdown
