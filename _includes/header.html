@@ -1,26 +1,34 @@
 <header class="main-header">
+  <div class="content-header">
+    <a class="beduardo-logo" href="{{ site.baseurl }}/">
+      <img src="../images/logo-beduardo.svg" alt="beduardo logo">
+    </a>
 
-    <a class="beduardo-logo" href="{{ site.baseurl }}/">Logo</a>
-
-    <span class="main-menu">Menu</span>
-
-    <nav class="main-nav">
-      <div class="trigger" style="display:none">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
+    <span class="main-menu">MENU</span>
     
     <div class="main-socialMedia">
       <ul>
-        <li class="icon-linkedin">LinkedIn</li>
-        <li class="icon-github">GitHub</li>
-        <li class="icon-twitter">Twitter</li>
+        <li class="icon linkedin">
+          <a href="https://br.linkedin.com/pub/bruno-eduardo/51/84/144" target="_blank">LinkedIn</a>
+        </li>
+        <li class="icon twitter">
+          <a href="https://twitter.com/bbrunoedu" target="_blank">Twitter</a>
+        </li>
+        <li class="icon github">
+          <a href="https://github.com/brunoeduardo" target="_blank">GitHub</a>
+        </li>
       </ul>
     </div>
   </div>
-
 </header>
+<!-- menu navegation -->
+    <nav class="main-nav">
+      <span class="bt-nav-close">X</span>
+      <div class="trigger">
+        <a class="page-link" href="{{ site.baseurl }}/">Home</a>
+        <a class="page-link" href="sobre.html">Sobre</a>
+        <a class="page-link" href="contato.html">Contato</a>
+
+      </div>
+    </nav>
+

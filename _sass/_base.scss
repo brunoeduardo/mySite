@@ -5,22 +5,25 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, li, figure {
     margin: 0;
     padding: 0;
-    style-line: none;
 }
 
+ul , li {
+    list-style: none;
+}
 
 
 /* Basic styling */
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
 }
+
 
 
 
@@ -56,7 +59,7 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
@@ -64,8 +67,9 @@ a {
 %clearfix {
 
     &:after {
+        clear: both;
         content: "";
         display: table;
-        clear: both;
     }
 }
+

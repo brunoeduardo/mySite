@@ -1,23 +1,38 @@
 ---
 layout: default
+title: Home
 ---
 
-<div class="home">
+<div class="content home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h2 class="page-heading">Projetos web</h2>
+    <ul>
+    	<li class="job-item">
+    		<a href="#">
+		    	<img src="http://dummyimage.com/300x300/000/fff" alt="">
+		    	<span class="job-descritivo">
+					Esse widget conta com um design diferenciado que remete a tecnologia e futurismo.
+		    	</span>
+    		</a>
+    	</li>
+       	<li class="job-item">
+    		<a href="#">
+		    	<img src="http://dummyimage.com/300x300/000/fff" alt="">
+		    	<span class="job-descritivo">
+					Esse widget conta com um design diferenciado que remete a tecnologia e futurismo.
+		    	</span>
+    		</a>
+    	</li>
+       	<li class="job-item">
+    		<a href="#">
+		    	<img src="http://dummyimage.com/300x300/000/fff" alt="">
+		    	<span class="job-descritivo">
+					Esse widget conta com um design diferenciado que remete a tecnologia e futurismo.
+		    	</span>
+    		</a>
+    	</li>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </ul>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
