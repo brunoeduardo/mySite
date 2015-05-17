@@ -1,0 +1,43 @@
+---
+layout: default
+title: Trabalhos
+---
+
+<div class="content home">
+    <div class="lista-projetos">
+      <h2 class="page-heading">Web</h2>
+        <ul>
+            {% for post in site.posts %}
+                {% if post.category == "web" %}
+                    <li class="job-item">
+                        <a href="{{ post.url }}">
+                            <img src="{{ post.img }}" alt="{{post.imgAlt}}">
+                            <span class="job-descritivo">
+                                <h2 class="job-titulo">{{ post.title }}</h2>
+                                {{post.description}}
+                            </span>
+                        </a>
+                    </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="lista-projetos impresso">
+      <h2 class="page-heading">Impressos</h2>
+        <ul>
+            {% for post in site.posts %}
+                {% if post.category == "impresso" %}
+                    <li class="job-item">
+                        <a href="{{ post.url }}">
+                            <img src="{{ post.img }}" alt="{{post.imgAlt}}">
+                            <span class="job-descritivo">
+                                <h2 class="job-titulo">{{ post.title }}</h2>
+                                {{post.description}}
+                            </span>
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>

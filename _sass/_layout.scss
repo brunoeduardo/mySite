@@ -207,6 +207,21 @@
 }
 
 /* jobs page */
+.lista-projetos {
+  margin-bottom: 40px;
+  overflow: hidden;
+  padding-top: 10px;
+  width: 100%;
+  
+  .page-heading{
+    padding-left:10px;
+  }
+}
+
+.impresso {
+  border-top: 1px solid $grey-color;
+}
+
 .job-item {
   height: 300px;
   margin: 10px auto;
@@ -219,7 +234,7 @@
 }
 
 .job-descritivo {
-  background-color: rgba(255, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
   color: #fff;
   display: block;
@@ -231,6 +246,7 @@
   top: -80px;
   z-index: 10;
 }
+
 
 /* sobre page */
 
@@ -297,10 +313,8 @@
 
 .main-footer {
     background-color: $grey-color;
-    bottom: 0;
     font-size: 0.7rem;
     padding: 2px 0;
-    position: absolute;
     text-align: center;
     width: 100%;
 }
