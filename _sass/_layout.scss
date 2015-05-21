@@ -1,3 +1,11 @@
+
+.content-header , .page-content, .footer-main-list, .image-top {
+  margin: 0 auto;
+  max-width: 1028px;
+  overflow: hidden;
+  position: relative;
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -6,19 +14,11 @@
   background: #fff;
   border-bottom: 2px solid $brand-color;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
   padding-bottom: 10px;
   top: 0;
   width: 100%;
   
   @extend %clearfix;
-}
-
-.content-header , .page-content{
-  margin: 0 auto;
-  max-width: 1028px;
-  overflow: hidden;
-  position: relative;
 }
 
 
@@ -201,6 +201,13 @@
 /* ==========================================================================
    Content
    ========================================================================== */
+/* image top */
+
+.image-top-content {
+  background-color: $grey-color;
+  margin-bottom: 15px;
+}
+
 
 .post-title {
   font-weight: 300;
@@ -312,7 +319,32 @@
    ========================================================================== */
 
 .main-footer {
-    background-color: $grey-color;
+  color: #fff;
+  background-color: #015c80;
+}
+
+.footer-main-list {
+  padding: 10px 0;
+}
+
+.list-itens {
+  border-top: 1px solid #003F59;
+  font-size: 0.7rem;
+  padding: 10px 0; 
+  text-align: center;
+  
+  &:first-child {
+    border-top: none;
+  }
+  
+  h2 {
+    font-size: 0.9rem;
+  }
+}
+
+.footer {
+    background-color: #333334;
+    color: #fff;
     font-size: 0.7rem;
     padding: 2px 0;
     text-align: center;
@@ -340,7 +372,16 @@
     top: 50px;
 
   }
+  
+  .list-itens {
+    border-top: none;
+    float: left;  
+    margin-left: 1%;
+    text-align: left;
+    width: 32%;
+  }
 }
+
 
 /* ==========================================================================
    medias queries min 950px
