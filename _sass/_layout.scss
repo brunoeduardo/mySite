@@ -208,10 +208,50 @@
   margin-bottom: 15px;
 }
 
-
 .post-title {
   font-weight: 300;
 }
+
+/* home */
+.services {
+  margin-top: 20px;
+  overflow: hidden;
+
+  li {
+    margin: 10px 0 40px;
+    text-align: center;
+  
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  h2 {
+    background: url(/images/bg-services.png) no-repeat scroll center top / 50px auto;
+    font-size:1.0rem; 
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-top: 50px;
+
+  }
+
+  .site-creation {
+    background-position: center 0;
+  }
+  
+  .front-end {
+    background-position: center -70px;
+  }
+  
+  .email-mkt {
+    background-position: center -143px;
+  }
+  
+  .offline {
+    background-position: center -217px;
+  }
+}
+
 
 /* jobs page */
 .lista-projetos {
@@ -240,18 +280,21 @@
   display: inline-block;
 }
 
+.job-titulo {
+  margin-bottom: 5px;
+}
+
 .job-descritivo {
   background-color: rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
   color: #fff;
   display: block;
-  font-size: 0.8rem;
-  height: 80px;
+  font-size: 0.7rem;
+  height: 60px;
   padding: 5px;
   position: relative;
   text-align: center;
-  top: -80px;
-  z-index: 10;
+  z-index: 7;
 }
 
 
@@ -264,6 +307,7 @@
 .post-content{
   font-size: 0.92rem;
 }
+
 
 /* contato page */
 
@@ -313,6 +357,11 @@
   }
 }
 
+/* Page Job */
+
+.nomeProjeto {
+  margin-top: 20px;
+}
 
 /* ==========================================================================
    Footer
@@ -321,6 +370,14 @@
 .main-footer {
   color: #fff;
   background-color: #015c80;
+
+  a {
+    color: #fff;
+    
+    &:hover { 
+      text-decoration: underline;
+    }
+  }
 }
 
 .footer-main-list {
@@ -329,8 +386,9 @@
 
 .list-itens {
   border-top: 1px solid #003F59;
+  box-sizing: border-box;
   font-size: 0.7rem;
-  padding: 10px 0; 
+  padding: 10px 20px; 
   text-align: center;
   
   &:first-child {
@@ -338,9 +396,47 @@
   }
   
   h2 {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 }
+
+.ico-mail {
+    margin-bottom: 10px;
+
+  &:before {
+    background: transparent url("/images/icon-mail.png") no-repeat scroll left center / 30px auto;
+    content: "E-mail: ";
+    display: inline-block;
+    height: 25px;
+    overflow: hidden;
+    text-indent: -300px;
+    width: 40px;
+  
+  }
+
+  a {
+    top: -9px;
+    position: relative;
+  }
+}
+
+.ico-cell {
+
+  &:before {
+    background: transparent url("/images/icon-cell.png") no-repeat scroll left center / 30px auto;
+    content: "E-mail: ";
+    display: inline-block;
+    height: 25px;
+    overflow: hidden;
+    position: relative;
+    text-indent: -300px;
+    top:6px;
+    width: 40px;
+  
+  }
+}
+
+
 
 .footer {
     background-color: #333334;
@@ -373,18 +469,27 @@
 
   }
   
+/* services home */
+  .services li{
+    float: left;  
+    margin-left: 1%;
+    width: 48%;
+  }
+
+
+  /* footer */
   .list-itens {
     border-top: none;
     float: left;  
     margin-left: 1%;
     text-align: left;
-    width: 32%;
+    width: 24%;
   }
 }
 
 
 /* ==========================================================================
-   medias queries min 950px
+   medias queries min 620px
    ========================================================================== */
    
 @media screen and (min-width: 620px) {
@@ -409,5 +514,12 @@
 .job-item {
     width: 32%;
     margin: auto;
+  }
+
+  /* services home */
+  .services li{
+    float: left;  
+    margin-left: 4%;
+    width: 22%;
   }
 }

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Trabalhos
+excerpt: Veja os últimos trabalhos feitos, oferecendo soluções inovadoras em designer e soluções web. 
 ---
 
 <div class="content home">
@@ -11,7 +12,7 @@ title: Trabalhos
                 {% if post.category == "web" %}
                     <li class="job-item">
                         <a href="{{ post.url }}">
-                            <img src="{{ post.img }}" alt="{{post.imgAlt}}">
+                            <img src="{{ post.img }}" alt="{{ post.imgAlt }}">
                             <span class="job-descritivo">
                                 <h2 class="job-titulo">{{ post.title }}</h2>
                                 {{post.description}}
@@ -29,7 +30,7 @@ title: Trabalhos
                 {% if post.category == "impresso" %}
                     <li class="job-item">
                         <a href="{{ post.url }}">
-                            <img src="{{ post.img }}" alt="{{post.imgAlt}}">
+                            <img src="{{ post.img }}" alt="{{ post.imgAlt }}">
                             <span class="job-descritivo">
                                 <h2 class="job-titulo">{{ post.title }}</h2>
                                 {{post.description}}

@@ -1,7 +1,7 @@
 # Site settings
 title: beduardo | web
 email: bruno@beduardo.com
-description: > # Sei la blog
+description: beduardo a solução para sua empresa
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://beduardo.com" # the base hostname & protocol for your site
 twitter_username: bbrunoedu

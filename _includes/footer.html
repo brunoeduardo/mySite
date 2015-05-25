@@ -1,23 +1,32 @@
 <footer class="main-footer">
 	<ul class="footer-main-list">
 		<li class="list-itens">
+			<h2>Sobre</h2>
+			Formado em Publicidade e Propaganda, tenho mais de 6 anos de experiência em soluções offline e online <a href="sobre.html">...mais</a>
+		</li>
+		<li class="list-itens">
 			<h2>Navegação</h2>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="sobre.html">Sobre</a></li>
-				<li><a href="trabalhos.html">Trabalhos</a></li>
-				<li><a href="contato.html">Contato</a></li>
+				<li><a href="{{ site.baseurl }}/">Home</a></li>
+				<li><a href="{{ site.baseurl }}/sobre.html">Sobre</a></li>
+				<li><a href="{{ site.baseurl }}/trabalhos.html">Trabalhos</a></li>
+				<li><a href="{{ site.baseurl }}/contato.html">Contato</a></li>
 			</ul>
 		</li>
 		<li class="list-itens">
 			<h2>Habilidades</h2> 
-			tecnicas e conhecimentos
+			<p>
+				<strong>Técnicas:</strong> HTML, CSS, Java Script, Sass, Analytics, Photoshop, Illustrator
+			</p>
+			<p>
+				<strong>Conhecimentos:</strong> UI Design, Marketing Digital, SEO, Publicidade.
+			</p>
 		</li>
 		<li class="list-itens">
 			<h2>Contato</h2>
 			<ul>
-				<li><strong>E-mail:</strong> <a href="mailto:bruno@beduardo.com" target="_blank">bruno@beduardo.com</a></li>
-				<li><strong>Celular:</strong> +55 11 9 8350.8966</li>
+				<li class="ico-mail"><a href="mailto:bruno@beduardo.com" target="_blank">bruno@beduardo.com</a></li>
+				<li class="ico-cell">+55 11 9 8350.8966</li>
 			</ul>
 		</li>
 	</ul>
@@ -26,4 +35,4 @@
 desenvolvido por beduardo
 </div>
 <!-- scripts -->
-<script src="/js/scripts.js"></script>
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
