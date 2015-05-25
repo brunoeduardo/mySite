@@ -6,6 +6,9 @@ title:  "Grupo JW Brazil"
 description: Site - layout e font-end
 img: images/jobs/jw-brazil-logo.jpg
 imgAlt: Grupo JW Brazil - logo
+excerpt: O site do Grupo JW Brazil, possui cores que trazem a sensação de segurança, o projeto conta com aplicação de JQuery para os formulários, banners e menus, validação W3C, URL amigáveis.
+
+
 ---
 
  O layout do site Grupo JW Brazil, empresa que presta consultoria em negócios de grande porte, possui cores que trazem a sensação de segurança. Com uma arte sóbria, o formato do site é bem empresarial.

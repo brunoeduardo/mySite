@@ -1,0 +1,16 @@
+---
+layout: post
+category: impresso
+permalink: /:categories/:title.html
+title:  "#Saudável"
+description: Logo
+img: images/jobs/saudavel-logo.jpg
+imgAlt: Saudável - logo
+excerpt: Criação de logo para campanha interna "Qualidade de Vida" da empresa Bioqualynet.
+---
+
+Criação de logo para campanha interna "Qualidade de Vida" da empresa Bioqualynet.
+
+<img src="{{ site.baseurl }}/images/jobs/saudavel.jpg" alt="Saudável - logo">
+	
+<a href="{{ site.baseurl }}/trabalhos.html"> << voltar </a>
